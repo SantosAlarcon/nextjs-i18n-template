@@ -42,7 +42,7 @@ jobs:
           elif [ -f "${{ github.workspace }}/package.json" ]; then
             echo "manager=bun" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
-            echo "runner=bunx --no-install" >> $GITHUB_OUTPUT
+            echo "runner=bun" >> $GITHUB_OUTPUT
           else
             echo "Unable to determine package manager"
             exit 1
