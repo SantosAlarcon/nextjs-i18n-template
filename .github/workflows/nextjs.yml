@@ -63,7 +63,7 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v4
         with:
-          bun-version: "latest",
+          bun-version: "latest"
           path: |
             .next/cache
           # Generate a new cache whenever packages or source files change.
