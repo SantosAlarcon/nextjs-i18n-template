@@ -1,6 +1,3 @@
-/**
- * @type {import("next-i18next").UserConfig}
- */
 
 const HttpBackend = require("i18next-http-backend/cjs");
 const LocalStorageBackend = require("i18next-localstorage-backend").default;
@@ -8,6 +5,9 @@ const LocalStorageBackend = require("i18next-localstorage-backend").default;
 const isBrowser = typeof window !== "undefined";
 const isDev = process.env.NODE_ENV === "development";
 
+/**
+ * @type {import("next-i18next").UserConfig}
+ */
 module.exports = {
 	backend: {
 		backendOptions: [{ expirationTime: isDev ? 60 * 1000 : 60 * 60 * 1000 }, {}], // 1 hour
@@ -20,6 +20,8 @@ module.exports = {
 		locales: ["en", "es", "ca"],
 	},
 	ns: ["common"],
+    preload: ["en", "es", "ca"],
+    load: "all",
 	/** To avoid issues when deploying to some paas (vercel...) */
 	localePath:
 		typeof window === "undefined"
