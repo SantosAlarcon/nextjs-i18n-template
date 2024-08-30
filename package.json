@@ -1,5 +1,5 @@
 {
-  "name": "prueba-nextjs15",
+  "name": "nextjs-i18n-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,22 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "i18next": "^23.11.5",
-    "i18next-http-backend": "^2.5.2",
+    "i18next": "^23.14.0",
+    "i18next-http-backend": "^2.6.1",
     "i18next-localstorage-backend": "^4.2.0",
+    "i18next-resources-to-backend": "^1.2.1",
     "next": "15.0.0-rc.0",
-    "next-i18next": "^15.3.0",
+    "next-i18n-router": "^5.5.1",
+    "next-i18next": "^15.3.1",
     "react": "19.0.0-rc-f994737d14-20240522",
     "react-dom": "19.0.0-rc-f994737d14-20240522",
-    "react-i18next": "^14.1.2"
+    "react-i18next": "^15.0.1"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.0-rc.0"
-  },
-  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+    "@types/node": "^22.5.1",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.4"
+  }
 }
